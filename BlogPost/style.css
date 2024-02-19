@@ -1,0 +1,306 @@
+/* body has a default margins and paddings */
+* {
+    /* this will remove the margin that 
+    prevents the header from taking the whole space */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+}
+
+main ul>li {
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+    list-style: none;
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgba(68, 68, 68, 0.45);
+}
+
+main ul>p {
+    border-left: 2px solid rgba(68, 68, 68, 0.45);
+    padding-left: 20px;
+    margin-left: 32px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111;
+}
+
+p {
+    font-size: 1.09rem;
+}
+
+span {
+    color: #e95400;
+}
+
+.approaches {
+    color: #e95400;
+}
+
+.mono {
+    color: #e95400;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+code {
+    color: #444;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 32px;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    color: #444;
+    background-color: #863ae8;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fdf9fd;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+header p {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    border-bottom: 1px solid #fdf9fd;
+    padding-bottom: 3rem;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #fdf9fd;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+main h2 {
+    font-size: 3.125rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main h3 {
+    font-size: 2.375rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main h4 {
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main h5 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main h6 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.headline {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #111;
+}
+
+blockquote {
+    font-size: .92rem;
+    font-style: italic;
+    border-left: 2px solid #e95400;
+    padding-left: 20px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+cite {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.date-posted {
+    font-size: .98rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* LVHA */
+footer a:link {
+    color: #fdf9fd;
+    text-decoration: none;
+}
+
+footer a:visited{
+    color: #cac7ca;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* footer a:active{} */
+
+@media (max-width: 630px) {
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 32px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 4.5rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    .date-posted {
+        font-size: .95rem;
+    }
+
+    .headline {
+        font-size: .98rem;
+    }
+
+    .quote {
+        font-size: .92rem;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 3.3rem;
+    }
+
+    code {
+        color: #e95400;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    main h2 {
+        font-size: 2.3rem;
+    }
+
+    .date-posted {
+        font-size: .92rem;
+    }
+
+    .headline {
+        font-size: .95rem;
+    }
+
+    .quote {
+        font-size: .90rem;
+    }
+
+}
